@@ -1,0 +1,49 @@
+ News Web Scraper
+
+Project Description
+
+
+The News Web Scraper project is designed to automate the process of collecting news data from websites. The project extracts structured information such as headlines, URLs, dates, and summaries from both static and dynamic news websites.
+
+For static web scraping, the project uses `requests` and `BeautifulSoup` to send HTTP requests, parse HTML content, and extract data from webpage elements.
+
+For dynamic web scraping, the project uses `Playwright` to handle JavaScript-rendered content by launching a browser instance, loading webpages completely, and retrieving rendered HTML before parsing it with BeautifulSoup.
+
+The extracted data is cleaned and organized using `pandas`. Duplicate URLs are removed to maintain clean data storage. Finally, the processed data is stored in both CSV files and SQLite databases.
+
+---
+
+## Features
+
+- Extract headlines
+- Extract URLs
+- Extract dates
+- Extract summaries
+- Static web scraping using requests + BeautifulSoup
+- Dynamic web scraping using Playwright + BeautifulSoup
+- Remove duplicate URLs
+- Store data in CSV files
+- Store data in SQLite databases
+
+---
+
+## Technologies Used
+
+- Python
+- requests
+- BeautifulSoup
+- Playwright
+- pandas
+- sqlite3
+- Git
+- GitHub
+
+---
+
+## Install Requirements
+
+```bash
+pip install requests
+pip install beautifulsoup4
+pip install pandas
+pip install playwright
