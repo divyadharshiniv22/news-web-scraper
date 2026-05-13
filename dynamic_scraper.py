@@ -17,8 +17,6 @@ with sync_playwright() as p:
     page.wait_for_timeout(5000)
 
     # get page html
-    html = page.content()
-
     # parse html
     soup = BeautifulSoup(html, "html.parser")
 
